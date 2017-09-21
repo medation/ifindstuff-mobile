@@ -1,0 +1,68 @@
+{
+    "stores": [{
+                "idStore": "1",
+                "nameStore": "Le magasin de musique",
+                "produits": [
+                    {
+                        "idProduit": "1",
+                        "nameProduit": "Guitare",
+                        "description":"Une basse acoustique est à rapprocher d'une guitare classique : la corde transmet via le chevalet ses vibrations à la table, qui mettra en résonance le volume d'air contenu dans la caisse, et le son sortira de l'ouïe de la guitare, et de la caisse elle-même (par transmission à l'air environnant).",
+                        "categorie":["Instrument de musique"],
+                        "price":200
+                    },
+                    {
+                        "idProduit": "2",
+                        "nameProduit": "Piano",
+                        "description":"Un instrument polyphonique à clavier, dont les cordes sont frappées par un marteau. ... Le piano standard est composé de 36 touches noires et 52 touches blanches, soit un total de 88 touches. Il existe principalement des pianos droits et des pianos à queue.",
+                        "categorie":["Instrument de musique"],
+                        "price":2000
+                    },
+                    {
+                        "idProduit": "3",
+                        "nameProduit": "L'harmonica des mers",
+                        "description":"Un instrument de musique à vent et à anche libre fonctionnant sur le même principe que l'accordéon : des anches métalliques de longueurs différentes, produisent les notes en vibrant ",
+                        "categorie":["Instrument de musique", "Equipement de surf"],
+                        "price":2000
+                    }
+                ],
+                "lat": 52.851030,
+                "lng":-4.426518,
+                "latitude": 52.851030,
+                "longitude":-4.426518,
+                "adresse":"la belle rue, le beau quartier, la meilleure ville",
+                "center": true
+            },
+            {
+                "idStore": "2",
+                "nameStore": "Le magasin de surf",
+                "produits": [
+                    {
+                        "idProduit": "3",
+                        "nameProduit": "Planche à mousse",
+                        "description":"Il n'est jamais évident de bien choisir sa planche de surf. Nous sommes allés demander conseil à Juanito, l'un des meilleurs shapers pro.","store":"Le magasin de surf",
+                        "categorie":["Equipement de surf"],
+                        "price": 3100
+                    },
+                    {
+                        "idProduit":"4",
+                        "nameProduit":"Boody",
+                        "description":"La planche à voile (parfois désignée par son nom anglais, windsurf) est un type d'embarcation à voile minimaliste, c'est aussi le sport de glisse pratiqué avec cette embarcation. Elle est constituée d'une simple planche insubmersible, ou flotteur, et d'un gréement articulé à la planche par la base du mât",
+                        "categorie":["Equipement de surf"],
+                        "price":1200
+                    },
+                    {
+                        "idProduit": "5",
+                        "nameProduit": "Planche à voile",
+                        "description":"La planche à voile (parfois désignée par son nom anglais, windsurf) est un type d'embarcation à voile minimaliste, c'est aussi le sport de glisse pratiqué avec cette embarcation. Elle est constituée d'une simple planche insubmersible, ou flotteur, et d'un gréement articulé à la planche par la base du mât",
+                        "categorie":["Equipement de surf"],
+                        "price":5300
+                    }
+                ],
+                "lat": 34.850140,
+                "lng":-4.416628,
+                "latitude": 34.850140,
+                "longitude":-4.416628,
+                "adresse":"Proche de la grosse vague, la plage d'à coté, la meilleure ville"
+            }
+    ]
+}

@@ -1,0 +1,22 @@
+<ion-header>
+    <ion-navbar no-border-bottom>
+        <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+        <ion-title>Categorie</ion-title>
+    </ion-navbar>
+</ion-header>
+<ion-content class="card-background-page">
+    <ion-card *ngFor="let item of categories" [hidden]="categories.count == 0" (click)="goToStore(item)" >
+        
+        <img class="img-card" [src]="item.banner">
+        <ion-card-title>{{item.nameCategorie}}</ion-card-title>
+
+    </ion-card>
+
+    <ion-list-header [hidden]="categories.length > 0">
+        Pas de catégorie trouvée.
+    </ion-list-header>
+
+
+</ion-content>

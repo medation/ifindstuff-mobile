@@ -1,0 +1,31 @@
+$categories: ( ionic: color($colors, primary), angular: #AC282B, communication: #8E8D93, tooling: #FE4C52, services: #FD8B2D, design: #FED035, workshop: #69BB7B, food: #3BC7C4, documentation: #B16BE3, navigation: #6600CC, );
+@function auxiliary-categories() {
+    @return map-remove($categories);
+}
+
+page-categories {
+    // @each $track, $value in auxiliary-categories() {
+    //  ion-item-sliding[track=#{$track}] ion-label {
+    //    border-left: 2px solid $value;
+    //    padding-left: 10px;
+    //  }
+    // }
+    .card-background-page {
+        ion-card {
+            position: relative;
+            text-align: center;
+            height: 100px;
+        }
+        .card-title {
+            position: absolute;
+            top: 30%;
+            font-size: 1.5em;
+            width: 100%;
+            font-weight: bold;
+            color: #ffffff;
+        }
+        .img-card{
+            opacity: 0.75;
+        }
+    }
+}

@@ -1,0 +1,23 @@
+<ion-header>
+    <ion-navbar no-border-bottom>
+        <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+        <ion-title>{{produit.nameProduit}}</ion-title>
+    </ion-navbar>
+</ion-header>
+<ion-content class="card-background-page">
+
+    <ion-card>
+        <ion-card-header>
+            {{produit.nameProduit}}
+        </ion-card-header>
+        <ion-card-content>
+            {{store.nameStore}} - {{produit.description}}
+        </ion-card-content>
+        <ion-card-content>
+            <ion-badge item-end>{{produit.price}} Dhs</ion-badge>
+        </ion-card-content>
+    </ion-card>
+
+</ion-content>

@@ -1,0 +1,31 @@
+<ion-header>
+    <ion-navbar no-border-bottom>
+        <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+        <ion-title>Magasin </ion-title>
+    </ion-navbar>
+</ion-header>
+<ion-content >
+
+    <ion-card >
+        <ion-card-header>
+            <ion-icon name="arrow-dropright"></ion-icon>&nbsp;
+            {{categorie.nameCategorie}}
+        </ion-card-header>
+    </ion-card>
+
+    <div class="card-background-page">
+        <ion-item *ngFor="let item of stores" [hidden]="stores.count == 0" (click)="goToProduit(item)">
+            <img class="img-store" src="assets/img/logoStore.jpg">
+            <h2>{{item.nameStore}}</h2>
+            <p>{{item.adresse}}</p>
+        </ion-item>
+
+        <ion-list-header [hidden]="stores.length > 0">
+            Aucun magasin trouvé.
+        </ion-list-header>        
+    </div>
+
+
+</ion-content>
