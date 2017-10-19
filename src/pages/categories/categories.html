@@ -7,10 +7,14 @@
     </ion-navbar>
 </ion-header>
 <ion-content class="card-background-page">
+    <ion-refresher (ionRefresh)="getCategories($event)">
+        <ion-refresher-content></ion-refresher-content>
+    </ion-refresher>
+
     <ion-card *ngFor="let item of categories" [hidden]="categories.count == 0" (click)="goToStore(item)" >
         
         <img class="img-card" [src]="item.banner">
-        <ion-card-title>{{item.nameCategorie}}</ion-card-title>
+        <ion-card-title>{{item.name}}</ion-card-title>
 
     </ion-card>
 

@@ -6,7 +6,8 @@ import { GoogleMap, GoogleMapsLatLng, GoogleMapsMarkerOptions } from 'ionic-nati
 
 import {AutocompletePage} from '../autocomplete/autocomplete';
 import { Utility } from '../../providers/utility';
-import { StoresData } from '../../providers/stores-data';
+
+import { RestService } from '../../services/rest.service';
 
 declare var google: any;
 
@@ -24,7 +25,7 @@ export class MapPage {
   @ViewChild('mapCanvas') mapElement: ElementRef;
   public map: GoogleMap;
 
-  constructor( public storesData: StoresData, public platform: Platform, public modalCtrl: ModalController, public utility: Utility,) {
+  constructor(public restService: RestService, public platform: Platform, public modalCtrl: ModalController, public utility: Utility,) {
 
     this.address = {
       place:{
@@ -47,7 +48,7 @@ export class MapPage {
 
     if (this.platform.is('cordova') === true) {
       let mapEle = this.mapElement.nativeElement;
-      this.storesData.getStores().subscribe(mapData => {
+      this.restService.getStores().subscribe(mapData => {
         this.map = new GoogleMap('map_canvas');
         mapEle.classList.add('show-map');
 
@@ -71,7 +72,7 @@ export class MapPage {
         });
       });
     } else {
-      this.storesData.getStores().subscribe(mapData => {
+      this.restService.getStores().subscribe(mapData => {
         let mapEle = this.mapElement.nativeElement;
 
         let map = new google.maps.Map(mapEle, {

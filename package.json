@@ -1,5 +1,5 @@
 {
-  "name": "ionic-hello-world",
+  "name": "iFindStuff",
   "version": "0.0.0",
   "author": "Ionic Framework",
   "homepage": "http://ionicframework.com/",
@@ -52,5 +52,5 @@
     "ionic-plugin-keyboard"
   ],
   "cordovaPlatforms": [],
-  "description": "com.ion2location2.0: An Ionic project"
+  "description": "An Ionic project"
 }

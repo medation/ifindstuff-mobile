@@ -1,26 +1,26 @@
 [
         {
-            "idCategorie": "1",
-            "nameCategorie": "Equipement de surf",
-            "descriptionCategorie":"Les boutiques tentent de couvrir toutes les possibilités en offrant plusieurs catégories d’équipement. Les surfeurs débutants se verront donner une planche plus conviviale qui absorbera les chocs. Une fois qu’ils seront à l’aise, ils pourront louer une planche pour surfeurs plus avancés.",
+            "id": "1",
+            "name": "Equipement de surf",
+            "description":"Les boutiques tentent de couvrir toutes les possibilités en offrant plusieurs catégories d’équipement. Les surfeurs débutants se verront donner une planche plus conviviale qui absorbera les chocs. Une fois qu’ils seront à l’aise, ils pourront louer une planche pour surfeurs plus avancés.",
             "banner": "http://www.surfguidingpeniche.com/wp-content/uploads/2016/02/Surfstuff-Hipster-Equipment.jpg"
         },
         {
-            "idCategorie": "2",
-            "nameCategorie": "Instrument de musique",
-            "descriptionCategorie": "Cette catégorie regroupe principalement les instruments de musique, mais également, les accessoires habituellement associés (anche, corde, diapason, plectre, etc.).",
+            "id": "2",
+            "name": "Instrument de musique",
+            "description": "Cette catégorie regroupe principalement les instruments de musique, mais également, les accessoires habituellement associés (anche, corde, diapason, plectre, etc.).",
             "banner": "http://www.les-instruments-de-musique.fr/images/accueil2.jpg"
         },
         {
-            "idCategorie": "3",
-            "nameCategorie": "Patisserie",
-            "descriptionCategorie":"Le pâtissier est le professionnel des desserts et des sucreries. Il cuisine des pâtisseries comme des éclairs au chocolat, des tartes, des religieuses ...",
+            "id": "3",
+            "name": "Patisserie",
+            "description":"Le pâtissier est le professionnel des desserts et des sucreries. Il cuisine des pâtisseries comme des éclairs au chocolat, des tartes, des religieuses ...",
             "banner": "http://www.telegraph.co.uk/content/dam/business/2016/05/18/Patisserie-Valerie_3511781b-xlarge_trans_NvBQzQNjv4BqpJliwavx4coWFCaEkEsb3kvxIt-lGGWCWqwLa_RXJU8.jpg"
         },
         {
-            "idCategorie": "4",
-            "nameCategorie": "Livre",
-            "descriptionCategorie":"Cette catégorie accueille tous les ouvrages à valeur documentaire (témoignage, livre d'investigation, etc.) et guides pratiques, ouvrages scientifiques, manuels de référence, tout ce qui a valeur pédagogique autour d'un thème précis.",
+            "id": "4",
+            "name": "Livre",
+            "description":"Cette catégorie accueille tous les ouvrages à valeur documentaire (témoignage, livre d'investigation, etc.) et guides pratiques, ouvrages scientifiques, manuels de référence, tout ce qui a valeur pédagogique autour d'un thème précis.",
             "banner": "http://www.frenchweb.fr/wp-content/uploads/2015/04/livre-biblioteque.jpg"
         }
 ]

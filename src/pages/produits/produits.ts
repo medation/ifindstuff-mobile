@@ -50,7 +50,7 @@ export class ProduitsPage {
     var loading = this.utility.getLoader();
     loading.present();
 
-      this.produits = this.store.produits;
+      this.produits = this.store.produit;
 
       //Hide loading
       setTimeout(function(){

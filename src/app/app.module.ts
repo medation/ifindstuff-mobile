@@ -19,11 +19,10 @@ import { TutorialPage } from '../pages/tutorial/tutorial';
 import { AutocompletePage } from '../pages/autocomplete/autocomplete';
 
 //import { Storage } from '@ionic/storage';
-import { CategoriesData } from '../providers/categories-data';
-import { StoresData } from '../providers/stores-data';
 import { UserData } from '../providers/user-data';
 import { Utility } from '../providers/utility';
 
+import { RestService } from '../services/rest.service';
 import { Facebook } from '@ionic-native/facebook';
 
 import { AngularFireModule } from 'angularfire2';
@@ -83,11 +82,13 @@ const firebaseConfig = {
     AutocompletePage
   ],
   providers: [
+    RestService,
     StatusBar,
     SplashScreen,
     Facebook,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    UserData, Utility, CategoriesData, StoresData,
+    UserData, 
+    Utility,
     AuthProvider,
     DataProvider,
     FunctionsProvider,
